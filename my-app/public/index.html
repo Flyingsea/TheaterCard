@@ -22,9 +22,17 @@
     <title>Рубрика театров</title>
   </head>
   <body>
+    <div>
+        <div className="cardCover" style={{backgroundImage: `url('IMG/cover1.png`}}>
+        <div className="filmLength">{moment.unix(duration).utc().format('HH:mm')}</div>
+        </div>
+        <div className="filmTitle">{title}</div>
+        <div className="filmRaing">{year} — {rating.toFixed(1)}</div>
+    </div>
     <noscript>
       You need to enable JavaScript to run this app.
-    </noscript>    <!--s
+    </noscript>
+     <!--s
     <div id="root"></div>
     <div id="CardsCarousel"></div>
 
