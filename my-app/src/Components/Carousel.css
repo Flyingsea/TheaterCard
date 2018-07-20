@@ -1,0 +1,23 @@
+.btn-slider{
+  width: 70px;
+  height: 70px;
+  margin-top: -120px;
+  margin-right: 8px;
+  background: #FFFFFF;
+  box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.15);
+  border-radius: 40px;
+  background-image: url(IMG/Arrow-Black.png);
+  background-size: cover;
+}
+
+.btn-slider-back{
+  width: 70px;
+  height: 70px;
+  margin-top: -120px;
+  background: #FFFFFF;
+  margin-left: 8px;
+  box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.15);
+  border-radius: 40px;
+  background-image: url(IMG/Arrow-Black-Back.png);
+  background-size: cover;
+}
