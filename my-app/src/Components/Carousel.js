@@ -14,7 +14,6 @@ class CardsCarousel extends Component {
   render() {
     return (
       <Carousel
-
       width="1260px"
       framePadding="0px 20px 0px 20px"
       slidesToShow="3"
@@ -33,10 +32,6 @@ class CardsCarousel extends Component {
           this.state.cardsList.map(event => event && <Card
             eventData={event}
           />)}
-          {
-            this.state.cardsList.map(event => event && <Card
-              eventData={event}
-            />)}
 
       </Carousel>
     );

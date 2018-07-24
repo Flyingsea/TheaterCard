@@ -4,51 +4,60 @@
   margin-right: 25px;
   margin-left: 11px;
   margin-top: 10px;
-  -webkit-transition: all 100ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
-  transition:         all 100ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  -webkit-transition: all 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  transition:         all 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
 
 
 .theaterCard:hover {
     //margin-top: 0px;
-
-    -webkit-transition: all 500ms  cubic-bezier(0.455, 0.03, 0.515, 0.955);
-    transition:         all 500ms  cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    opacity: 0.85;
+    -webkit-transition: all 50ms  cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    transition:         all 50ms  cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    //    transform: scale(1.01);
 }
 
+.theaterCard:active {
+    //margin-top: 0px;
+    opacity: 0.85;
+    -webkit-transition: all 50ms  cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    transition:         all 50ms  cubic-bezier(0.455, 0.03, 0.515, 0.955);
+      transform: scale(0.98);
+}
 .theaterCard:hover .eventTitle{
-  color: #FD363B;
+  //color: #DF0B17;
   -webkit-transition: all 000ms  cubic-bezier(0.455, 0.03, 0.515, 0.955);
   transition:         all 000ms  cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
-.theaterCard:hover .eventPrice{
-    background: #FFEA90;
-    -webkit-transition: all 300ms  cubic-bezier(0.455, 0.03, 0.515, 0.955);
-    transition:         all 300ms  cubic-bezier(0.455, 0.03, 0.515, 0.955);
+.eventPrice:hover{
+  background: #FFCC00;
+    -webkit-transition: all 20ms  cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    transition:         all 20ms  cubic-bezier(0.455, 0.03, 0.515, 0.955);
 
 }
 
 .theaterCard:hover .eventPlace{
   -webkit-transition: all 300ms  cubic-bezier(0.455, 0.03, 0.515, 0.955);
   transition:         all 300ms  cubic-bezier(0.455, 0.03, 0.515, 0.955);
-  opacity: 0.4;
+  opacity: 0.5;
 }
 
 
 
 .cardCover {
-  width: 382px;
-  height: 260px;
+  width: 375px;
+  height: 255px;
   overflow: hidden;
   -webkit-transition: all 500ms  cubic-bezier(0.455, 0.03, 0.515, 0.955);
   transition:         all 500ms  cubic-bezier(0.455, 0.03, 0.515, 0.955);
-  border-radius: 11px;
+  //border-radius: 11px;
 }
 
 .theaterCard:hover .cardCover {
   opacity: 1;
   -webkit-transition: all 500ms  cubic-bezier(0.455, 0.03, 0.515, 0.955);
   transition:         all 500ms  cubic-bezier(0.455, 0.03, 0.515, 0.955);
+
 }
 
 .cardCoverBg {
@@ -60,13 +69,16 @@
 }
 
 .theaterCard:hover .cardCoverBg{
-  -webkit-transition: all 500ms  cubic-bezier(0.455, 0.03, 0.515, 0.955);
-  transition:         all 500ms  cubic-bezier(0.455, 0.03, 0.515, 0.955);
-  transform: scale(1.02);
+  -webkit-transition: all 300ms  cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  transition:         all 300ms  cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  transform: scale(1.05);
 }
 
 .eventRating{
   width: 50px;
+  //margin-top: 16px;
+  //margin-left: 14px;
+  //border-radius: 4px;
   text-align: center;
   background-color: var(--green);
   font-family: YS Text;
@@ -79,32 +91,46 @@
   position: absolute;
   z-index: 99999;
 }
+.eventGenre{
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  opacity: 0.35;
+  margin-top: 6px;
+}
 .eventTitle{
-  margin-top: 14px;
-  font-family: YS Display;
+  //font-family: YS Display;
+  margin-top: -2px;
   font-style: normal;
   font-weight: 900;
-  line-height: 33px;
-  font-size: 29px;
-  letter-spacing: 0.01em;
+  line-height: 31px;
+  font-size: 27px;
   -webkit-transition: all 300ms  cubic-bezier(0.455, 0.03, 0.515, 0.955);
   transition:         all 300ms  cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
 .eventDescripion{
+
   width: 370px;
   margin-top: 4px;
   font-style: normal;
   font-weight: normal;
-  line-height: 26px;
-  font-size: 18px;
+  line-height: 24px;
+  font-size: 17px;
+//    font-size: 18px;
 }
 .eventPlace{
   width: 370px;
   font-style: normal;
   font-weight: normal;
-  line-height: 26px;
-  font-size: 18px;
-  opacity: 0.4;
+  line-height: 24px;
+  font-size: 17px;
+  //font-size: 16px;
+//  line-height: 22px;
+  //  margin-top: 4px;
+opacity: 0.4;
 
   -webkit-transition: all 300ms  cubic-bezier(0.455, 0.03, 0.515, 0.955);
   transition:         all 300ms  cubic-bezier(0.455, 0.03, 0.515, 0.955);
@@ -116,19 +142,20 @@
   transition:         all 300ms  cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
 .eventPrice{
+
   width: auto;
   float: left;
   margin-top: 10px;
   padding: 0 12px 0 12px;
-  margin-left: -4px;
+  margin-left: -3px;
   font-style: normal;
   font-weight: normal;
-  line-height: 35px;
-  font-size: 19px;
+  line-height: 33px;
+  font-size: 17px;
+  background: #FFF3CB;
   background: #FFE266;
   border-radius: 50px;
   transition: 0.1s;
-  -webkit-transition: all 700ms  cubic-bezier(0.455, 0.03, 0.515, 0.955);
-  transition:         all 700ms  cubic-bezier(0.455, 0.03, 0.515, 0.955);
-
+  -webkit-transition: all 300ms  cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  transition:         all 300ms  cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }

@@ -40,6 +40,7 @@ class Card extends Component {
               <div className="cardCoverBg" style={style}></div>
 
           </div>
+          <div className="eventGenre">{this.state.eventData.event.tags[0].name}</div>
           <div className="eventTitle">{this.state.eventData.event.title}
   </div>
           <div className="eventDescripion">{this.state.eventData.event.argument}</div>
