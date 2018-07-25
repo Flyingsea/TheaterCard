@@ -34,6 +34,8 @@ class Card extends Component {
     return (
       <div className="theaterCard">
         <div className="eventRating">{this.state.eventData.event.userRating.overall.value}</div>
+        <input type="checkbox" id="btnControl"/>
+        <label className="Collection" for="btnControl"></label>
           <div className="cardCover">
 
 
@@ -44,7 +46,7 @@ class Card extends Component {
           <div className="eventTitle">{this.state.eventData.event.title}
   </div>
           <div className="eventDescripion">{this.state.eventData.event.argument}</div>
-          <div className="eventPlace">{this.state.eventData.scheduleInfo.placePreview}, <div className="eventTime">{replaceSpaces(this.state.eventData.scheduleInfo.preview.text)}</div></div>
+          <div className="eventPlace">{this.state.eventData.scheduleInfo.placePreview}<br/> <div className="eventTime">{replaceSpaces(this.state.eventData.scheduleInfo.preview.text)}</div></div>
 
           <div className="eventPrice">от {numberWithSpaces(this.state.eventData.event.tickets[0].price.min/100)} ₽</div>
           <br style={clearBr} />
